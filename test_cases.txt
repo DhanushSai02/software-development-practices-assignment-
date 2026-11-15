@@ -1,0 +1,12 @@
+# Login System – Test Case Design
+
+| Test Case ID | Test Scenario | Input Data | Expected Output |
+|---|---|---|---|
+| TC_01 | Valid login | Username=user1, Password=pass123 | Login successful; user redirected to dashboard |
+| TC_02 | Empty username | Username="", Password=pass123 | Display "Username is required" |
+| TC_03 | Empty password | Username=user1, Password="" | Display "Password is required" |
+| TC_04 | Password less than 6 characters | Username=user1, Password=abc12 | Display "Password must be at least 6 characters" |
+| TC_05 | Password exactly 6 characters | Username=user1, Password=abc123 | Login proceeds to credential validation |
+| TC_06 | Invalid credentials | Username=wronguser, Password=wrong123 | Display "Invalid username or password" |
+| TC_07 | Three consecutive failed attempts | Three incorrect login attempts | Display "Account locked after 3 failed attempts"; prevent further login |
+| TC_08 | Empty username and password | Username="", Password="" | Display "Username is required" and prevent login |
