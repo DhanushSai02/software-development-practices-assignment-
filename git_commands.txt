@@ -1,0 +1,76 @@
+SOFTWARE DEVELOPMENT PRACTICES - GIT COMMANDS
+
+1. git init
+Initializes a new Git repository in the current folder.
+
+2. git add index.html about.html
+Stages HTML files for the next commit.
+
+3. git commit -m "Initial project setup"
+Records the initial project state in Git history.
+
+4. git add index.html
+Stages changes made to index.html.
+
+5. git commit -m "Update project introduction"
+Creates a commit containing the HTML modification.
+
+6. git checkout -b feature
+Creates a new branch named feature and switches to it.
+
+7. git branch
+Displays all branches in the repository.
+
+8. git checkout feature
+Switches to the feature branch.
+
+9. git add about.html
+Stages changes made to about.html.
+
+10. git commit -m "Add feature branch update"
+Commits changes to the feature branch.
+
+11. git checkout master
+Switches back to the master branch.
+
+12. git merge feature
+Merges the feature branch into master.
+
+13. git log --oneline --graph --all
+Displays commit history and branch activity.
+
+14. git status
+Displays the current repository status.
+
+15. git add .gitignore
+Stages the .gitignore file.
+
+16. git commit -m "Add gitignore rules"
+Commits the ignore rules.
+
+17. git add index.html
+Stages the temporary paragraph modification.
+
+18. git commit -m "Add temporary paragraph"
+Creates an additional commit before undoing it.
+
+19. git revert HEAD
+Creates a new commit that reverses the latest commit.
+
+20. git add README.md
+Stages the README file.
+
+21. git commit -m "Add project README"
+Records the README file in Git history.
+
+22. git remote add origin REPOSITORY_URL
+Connects the local repository to GitHub.
+
+23. git push -u origin master
+Pushes the master branch to GitHub and sets its upstream.
+
+24. git push origin feature
+Pushes the feature branch to GitHub.
+
+25. git branch
+Displays the local branches.
